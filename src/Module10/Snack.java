@@ -2,6 +2,7 @@ package Module10;
 
 public class Snack implements Basketltem, FoodItem {
     private String name;
+    private double price;
     private int calories;
     private int fatContent;
     private int sugarContent;
@@ -21,6 +22,17 @@ public class Snack implements Basketltem, FoodItem {
 
     public void setSugarContent(int sugarContent) {
         this.sugarContent = sugarContent;
+    }
+
+
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override

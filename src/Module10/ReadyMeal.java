@@ -2,6 +2,7 @@ package Module10;
 
 public class ReadyMeal implements FoodItem, Basketltem {
     private int calories;
+    private double price;
     private String name;
     private String cuisineType;
 
@@ -12,6 +13,16 @@ public class ReadyMeal implements FoodItem, Basketltem {
 
     public void setCuisineType(String cuisineType) {
         this.cuisineType = cuisineType;
+    }
+
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override

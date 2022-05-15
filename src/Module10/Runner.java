@@ -56,7 +56,7 @@ public class Runner {
         ArrayList<Basketltem> basketltems = basket.getAllItems();
         System.out.println("number items in the basket is " + basketltems.size());
         for (Basketltem basketltem : basketltems) {
-            System.out.println(basketltem);
+            System.out.println(basketltem.getName());
         }
 
         //CalorieCounter
@@ -68,7 +68,7 @@ public class Runner {
         ArrayList<FoodItem> foodItems = calorieCounter.getAllLowCalorieFoods();
         System.out.println("the number of items in calorieCounter is " + foodItems.size());
         for (FoodItem foodItem : foodItems) {
-            System.out.println(foodItem);
+            System.out.println("the number of calories is : " + foodItem.getCalories());
         }
     }
 }
