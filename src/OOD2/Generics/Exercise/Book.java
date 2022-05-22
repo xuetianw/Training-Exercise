@@ -1,18 +1,24 @@
 package OOD2.Generics.Exercise;
 
-public class Book <D> implements CatalogItem<D> {
-    D id;
+public class Book implements CatalogItem<Integer> {
+    private Integer id;
 
     @Override
-    public void setId(D id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
     @Override
-    public D getId() {
+    public Integer getId() {
         return id;
     }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                '}';
+    }
 }
 
 

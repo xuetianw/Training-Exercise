@@ -2,14 +2,29 @@ package OOD2.Generics.Exercise;
 
 public class Main {
     public static void main(String[] args) {
-        Book<Double> book = new Book<>();
-        Catalog<Book<Double>, Double> doubleIdBookCatalog = new Catalog<>();
+        Book book = new Book();
+        book.setId(2);
+        Book book2 = new Book();
+        book2.setId(3);
 
-        doubleIdBookCatalog.addItem(book);
+        Catalog catalog = new Catalog();
+        catalog.addItem(book);
+        catalog.addItem(book2);
 
-        Catalog<Borrower<Integer>, Integer> integerIdBorrowerCatalog = new Catalog<>();
-        Borrower<Integer> borrower = new Borrower<>();
+        Borrower borrower1 = new Borrower();
+        Borrower borrower2 = new Borrower();
+        catalog.addItem(borrower1);
+        catalog.addItem(borrower2);
 
-        integerIdBorrowerCatalog.addItem(borrower);
+
+
+
+
+        Borrower borrower = new Borrower();
+
+//        Catalog<Borrower<Integer>, Integer> integerIdBorrowerCatalog = new Catalog<>();
+//        Borrower<Integer> borrower = new Borrower<>();
+
+//        integerIdBorrowerCatalog.addItem(borrower);
     }
 }
