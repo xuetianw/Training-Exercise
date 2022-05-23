@@ -7,14 +7,16 @@ public class Main {
         Book book2 = new Book();
         book2.setId(3);
 
-        Catalog catalog = new Catalog();
+        Catalog<CatalogItem<Integer>, Integer> catalog = new Catalog<>();
+
+//        Catalog<CatalogItem<?>, Number> catalog = new Catalog<CatalogItem<Number>, Number>();
         catalog.addItem(book);
         catalog.addItem(book2);
-
+//
         Borrower borrower1 = new Borrower();
         Borrower borrower2 = new Borrower();
-        catalog.addItem(borrower1);
-        catalog.addItem(borrower2);
+//        catalog.addItem(borrower1);
+//        catalog.addItem(borrower2);
 
 
 
