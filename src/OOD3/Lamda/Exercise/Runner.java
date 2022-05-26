@@ -143,6 +143,7 @@ public class Runner {
 
         //1.5.3
         Map<Integer, Double> map2 = new HashMap<>();
+        //1.5.4
         for(BankAccount bankAccount : bankAccounts) {
             int bankCode = bankAccount.getBankCode();
             double balance = bankAccount.getBalance();
@@ -154,17 +155,18 @@ public class Runner {
         }
         System.out.println();
 
-
-        //1.5.4
+/*
         Map<Integer, BankAccount> map3 = new HashMap<>();
         for (BankAccount bankAccount :bankAccounts) {
             int bankCode = bankAccount.getBankCode();
         }
 
+        int id = 1;
+        for(BankAccount bankAccount : bankAccounts) {
+            map3.merge(id++, bankAccount, (dummy, account) -> account);
+        }
 
-
-
-
-
+        map3.forEach((bankId, bankAccount) -> System.out.println("the id id:" + bankId + "the bank info is " + bankAccount));
+*/
     }
 }
