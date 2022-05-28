@@ -1,9 +1,8 @@
-package OOD3.Optionals;
+package OOD3.Optional;
 
 public class Memory {
     private String model;
 
-    private Motherboard motherBoard;
 
     public Memory(String model) {
         this.model = model;
@@ -15,14 +14,6 @@ public class Memory {
 
     public void setModel(String model) {
         this.model = model;
-    }
-
-    public Motherboard getMotherBoard() {
-        return motherBoard;
-    }
-
-    public void setMotherBoard(Motherboard motherBoard) {
-        this.motherBoard = motherBoard;
     }
 
     public void accessData() {
