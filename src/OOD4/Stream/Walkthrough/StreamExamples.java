@@ -29,7 +29,8 @@ public class StreamExamples {
 
         trainees.stream().max((t1, t2) -> Double.compare(t1.getAverageGrade(), t2.getAverageGrade())).ifPresent(x -> System.out.println(x.getAverageGrade()));
         trainees.stream().reduce((t1, t2) -> t1.getAge() > t2.getAge() ? t1 : t2).ifPresent(t -> System.out.println(t));
-        trainees.stream().reduce((t1, t2) -> t1.getAge() > t2.getAge() ? t1 : t2).orElse(new Trainee("Dumy", "Dummy", 22, 22.0));
+        trainees.stream().reduce((t1, t2) -> t1.getAge() > t2.getAge() ? t1 : t2).orElse(new Trainee("Dummy", "Dummy", 22, 22.0));
+
 
         Trainee[] traineesArray = {trainee1, trainee2};
 
@@ -45,5 +46,16 @@ public class StreamExamples {
         for (Trainee trainee : trainees1) {
             System.out.println(trainee);
         }
+
+        // Creating list of integers
+        List<Integer> array = Arrays.asList(-2, 0, 4, 6, 8);
+
+        // Finding sum of all elements
+        array.stream().reduce(
+                (element1, element2) -> element1 + element2).ifPresent(x -> System.out.println(x));
+
+        // reduce functions are overloaded
+        int sum = array.stream().reduce(0, (element1, element2) -> element1 + element2);
+        System.out.println(sum);
     }
 }
