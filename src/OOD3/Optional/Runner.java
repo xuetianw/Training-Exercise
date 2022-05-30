@@ -42,6 +42,7 @@ public class Runner {
 //                .size();
 
         computer.getMotherboard().orElse(motherboard).getMemory().ifPresent(x-> x.accessData());
+        System.out.println(computer.getMotherboard().isPresent());
 
         computer.getMotherboard().ifPresent(x -> System.out.println(x.getMemory()));
 
