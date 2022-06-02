@@ -1,9 +1,7 @@
-package OODSoloProject.Model.Data;
+package OODSoloProject.Data;
 
-import OODSoloProject.Model.Model.Order;
-import OODSoloProject.Model.Model.User;
+import OODSoloProject.Model.User;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 

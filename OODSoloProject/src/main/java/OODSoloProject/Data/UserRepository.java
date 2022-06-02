@@ -1,6 +1,6 @@
-package OODSoloProject.Model.Data;
+package OODSoloProject.Data;
 
-import OODSoloProject.Model.Model.User;
+import OODSoloProject.Model.User;
 
 public interface UserRepository extends Searchable, Persistable, Removeable{
     boolean validate(String username, String password);

@@ -1,4 +1,4 @@
-package OODSoloProject.Model.Model;
+package OODSoloProject.Model;
 
 import java.util.Objects;
 

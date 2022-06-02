@@ -1,6 +1,6 @@
-package OODSoloProject.Model.Data;
+package OODSoloProject.Data;
 
-import OODSoloProject.Model.Model.User;
+import OODSoloProject.Model.User;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
 
 class UserArrayListRepositoryTest {
@@ -57,8 +56,8 @@ class UserArrayListRepositoryTest {
     @Test
     void findByUsernameTest() {
         userArrayListRepository = new UserArrayListRepository(users);
-        assertEquals(user1, userArrayListRepository.findByUsername("Fred"));
-        assertEquals(null, userArrayListRepository.findByUsername("Fred2"));
+        Assertions.assertEquals(user1, userArrayListRepository.findByUsername("Fred"));
+        Assertions.assertEquals(null, userArrayListRepository.findByUsername("Fred2"));
     }
 
     @Test
@@ -101,10 +100,10 @@ class UserArrayListRepositoryTest {
     void findByIdTest() {
         userArrayListRepository = new UserArrayListRepository(users);
 
-        assertEquals(user1, userArrayListRepository.findBytId(user1.getUserId()));
-        assertNotEquals(user2, userArrayListRepository.findBytId(user1.getUserId()));
-        assertEquals(user2, userArrayListRepository.findBytId(user2.getUserId()));
-        assertEquals(null, userArrayListRepository.findBytId(user3.getUserId()));
+        Assertions.assertEquals(user1, userArrayListRepository.findBytId(user1.getUserId()));
+        Assertions.assertNotEquals(user2, userArrayListRepository.findBytId(user1.getUserId()));
+        Assertions.assertEquals(user2, userArrayListRepository.findBytId(user2.getUserId()));
+        Assertions.assertEquals(null, userArrayListRepository.findBytId(user3.getUserId()));
     }
 
     @Test

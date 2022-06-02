@@ -1,4 +1,4 @@
-package OODSoloProject.Model.Model;
+package OODSoloProject.Model;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

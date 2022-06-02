@@ -1,4 +1,4 @@
-package OODSoloProject.Model.Model;
+package OODSoloProject.Model;
 
 public enum BookGenre {
     label;
