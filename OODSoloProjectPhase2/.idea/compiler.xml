@@ -9,8 +9,5 @@
         <module name="OODSoloProjectPhase2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="OODSoloProjectPhase2" target="15" />
-    </bytecodeTargetLevel>
   </component>
 </project>
