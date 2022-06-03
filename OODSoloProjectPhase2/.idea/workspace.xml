@@ -4,28 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88c8b19d-9b10-4bb8-8a49-5b08c03f938b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Data/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Data/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Data/Persistable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Data/Removeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Data/Searchable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Data/UserArrayListRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Data/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Model/AudioBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Model/BookGenre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Model/EBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/customexception/ItemNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/customexception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/service/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OODSoloProject/service/OrderingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/AuthenticationServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/BookServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/OrderingServiceTest.java" afterDir="false" />
+    <list default="true" id="88c8b19d-9b10-4bb8-8a49-5b08c03f938b" name="Changes" comment="implement solo-project phase 2">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,31 +44,39 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2A2ONr0gnLK1R9NcFQxruToKw2d" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/xueti/IdeaProjects/Training-Practise/OODSoloProjectPhase2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xueti/IdeaProjects/Training-Practise/OODSoloProjectPhase2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xueti\IdeaProjects\Training-Practise\OODSoloProjectPhase2" />
       <recent name="C:\Users\xueti\IdeaProjects\Training-Practise\OODSoloProjectPhase2\src\main\java\OODSoloProject" />
       <recent name="C:\Users\xueti\IdeaProjects\Training-Practise\OODSoloProjectPhase2\src\main\java" />
     </key>
@@ -180,7 +185,8 @@
       <updated>1654204178917</updated>
       <workItem from="1654204180810" duration="31781000" />
       <workItem from="1654243293126" duration="1882000" />
-      <workItem from="1654245574258" duration="377000" />
+      <workItem from="1654245574258" duration="959000" />
+      <workItem from="1654246571106" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="implement solo-project phase 2">
       <created>1654245419026</created>
@@ -189,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654245419026</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implement solo-project phase 2">
+      <created>1654246089713</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654246089713</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
