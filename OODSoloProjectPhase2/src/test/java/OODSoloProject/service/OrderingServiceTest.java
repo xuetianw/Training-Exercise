@@ -82,11 +82,13 @@ class OrderingServiceTest {
     }
 
     @Test
-    void getOrdersForUserTest() {
+    void getOrdersForSameUserTest() {
         Order order1 = new Order();
         Order order2 = new Order();
 
         User user = new User();
+        user.setUserName("Fred");
+
 
         order1.setUser(user);
         order2.setUser(user);
@@ -103,8 +105,38 @@ class OrderingServiceTest {
         assertEquals(orders, returnedOrder);
     }
 
+
     @Test
-    void getOrdersForBookTest() {
+    void getOrdersForDifferentUserTest() {
+        Order order1 = new Order();
+        Order order2 = new Order();
+
+        User user = new User();
+        user.setUserName("Fred");
+        User user2 = new User();
+        user2.setUserName("Jason");
+
+
+        order1.setUser(user);
+        order2.setUser(user2);
+
+
+        List<Order> orders = new ArrayList<>(Arrays.asList(order1, order2));
+
+        List<Order> expectedOrders = new ArrayList<>(Arrays.asList(order1));
+
+
+        when(mockOrderRepository.findAll()).thenReturn(orders);
+
+        List<Order> returnedOrder = orderingService.getOrdersForUser(user);
+
+        verify(mockOrderRepository, times(1)).findAll();
+
+        assertEquals(expectedOrders, returnedOrder);
+    }
+
+    @Test
+    void getOrdersForBookUsingSameBook() {
         Order order1 = new Order();
         Order order2 = new Order();
 
@@ -117,10 +149,40 @@ class OrderingServiceTest {
 
         when(mockOrderRepository.findAll()).thenReturn(orders);
 
-        List<Order> expectedOrders = orderingService.getOrdersForBook(book);
+        List<Order> returnedOrders = orderingService.getOrdersForBook(book);
 
         verify(mockOrderRepository, times(1)).findAll();
 
-        assertEquals(orders, expectedOrders);
+        assertEquals(orders, returnedOrders);
+    }
+
+
+
+    @Test
+    void getOrdersForBookwithUsingDifferentBooks() {
+        Order order1 = new Order();
+        Order order2 = new Order();
+
+
+        Book book = new Book();
+        Book book2 = new Book();
+        book.setAuthor("Fred");
+        book2.setTitle("Jason");
+
+        order1.setBookOrdered(book);
+        order2.setBookOrdered(book2);
+
+        List<Order> orders = new ArrayList<>(Arrays.asList(order1, order2));
+
+        List<Order> expectedOrders = new ArrayList<>(Arrays.asList(order1));
+
+
+        when(mockOrderRepository.findAll()).thenReturn(orders);
+
+        List<Order> returnedOrders = orderingService.getOrdersForBook(book);
+
+        verify(mockOrderRepository, times(1)).findAll();
+
+        assertEquals(expectedOrders, returnedOrders);
     }
 }

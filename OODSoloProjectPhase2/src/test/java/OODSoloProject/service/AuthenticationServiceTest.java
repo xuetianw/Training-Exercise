@@ -6,8 +6,7 @@ import OODSoloProject.customexception.UserNotFoundException;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class AuthenticationServiceTest {
@@ -22,7 +21,7 @@ class AuthenticationServiceTest {
     }
 
     @Test
-    public void authenticateTest() throws UserNotFoundException {
+    public void authenticateWithCorrectInfo() throws UserNotFoundException {
         User user = new User();
         user.setUserName("Fred");
         user.setPassword("abc");
@@ -34,13 +33,25 @@ class AuthenticationServiceTest {
 
         verify(mockUserRepository, times(1)).validate(user.getUserName(), user.getPassword());
         assertEquals(user, returnedUser);
-
-        assertThrows(UserNotFoundException.class, () -> authenticationService.authenticate("Wrong name", user.getPassword()));
     }
 
 
     @Test
-    public void findByIdTest() throws UserNotFoundException {
+    public void authenticatePersonWrongInfoTest() throws UserNotFoundException {
+        User user = new User();
+        user.setUserName("Fred");
+        user.setPassword("abc");
+
+        when(mockUserRepository.validate("Wrong name", user.getPassword())).thenReturn(false);
+
+        assertThrows(UserNotFoundException.class, () -> authenticationService.authenticate("Wrong name", user.getPassword()));
+
+        verify(mockUserRepository, times(1)).validate("Wrong name", user.getPassword());
+    }
+
+
+    @Test
+    public void findByIdWithCorrectIDTest() throws UserNotFoundException {
         User user = new User();
         user.setUserName("Fred");
         user.setPassword("abc");
@@ -56,5 +67,16 @@ class AuthenticationServiceTest {
         assertEquals(returnedUser, user);
 
         assertThrows(UserNotFoundException.class, () -> authenticationService.findById(2));
+    }
+
+
+    @Test
+    public void findByIdWithWrongIDTest() throws UserNotFoundException {
+
+        when(mockUserRepository.findById(2)).thenReturn(null);
+
+        assertThrows(UserNotFoundException.class, () -> authenticationService.findById(2));
+
+        verify(mockUserRepository, times(1)).findById(2);
     }
 }

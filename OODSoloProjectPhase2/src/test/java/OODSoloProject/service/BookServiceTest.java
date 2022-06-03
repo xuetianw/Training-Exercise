@@ -115,7 +115,29 @@ class BookServiceTest {
     }
 
     @Test
-    void searchBooksByAuthorNameTest() {
+    void searchBooksByAuthorNameUsingBooksWithSameAuthorWithSamwWords() {
+        Book book1 = new Book();
+        Book book2 = new Book();
+        String author = "author";
+
+        book1.setAuthor(author);
+        book2.setAuthor(author);
+
+
+        List<Book> books = new ArrayList<>(Arrays.asList(book1, book2));
+
+        when(mockBookRepository.findAll()).thenReturn(books);
+
+        List<Book> returnedBook = bookService.searchBooksByAuthorName(author);
+
+        verify(mockBookRepository, times(1)).findAll();
+
+        assertEquals(books, returnedBook);
+    }
+
+
+    @Test
+    void searchBooksByAuthorNameUsingBooksButDifferentWords() {
         Book book1 = new Book();
         Book book2 = new Book();
         String author = "author";
@@ -135,8 +157,34 @@ class BookServiceTest {
         assertEquals(books, returnedBook);
     }
 
+
     @Test
-    void findByIdTestUserExistAndNotExist() throws ItemNotFoundException {
+    void searchBooksByAuthorWithBooksWithoutAllHavingTheAuthor() {
+        Book book1 = new Book();
+        Book book2 = new Book();
+        String author = "author";
+
+        book1.setAuthor(author);
+        book2.setAuthor("Different");
+
+
+        List<Book> books = new ArrayList<>(Arrays.asList(book1, book2));
+
+        List<Book> expectedReturnedBooks = new ArrayList<>(Arrays.asList(book1));
+
+
+        when(mockBookRepository.findAll()).thenReturn(books);
+
+        List<Book> returnedBook = bookService.searchBooksByAuthorName(author);
+
+        verify(mockBookRepository, times(1)).findAll();
+
+        assertEquals(expectedReturnedBooks, returnedBook);
+    }
+
+
+    @Test
+    void findByIdTestBookIDExist() throws ItemNotFoundException {
         Book expectedBook = new Book();
         expectedBook.setItemId(1);
         Book book2 = new Book();
@@ -151,8 +199,22 @@ class BookServiceTest {
         verify(mockBookRepository, times(1)).findById(1);
 
         assertEquals(expectedBook, returnedBook);
+    }
+
+
+
+    @Test
+    void findByIdTestBookIDNotExist() throws ItemNotFoundException {
+        Book expectedBook = new Book();
+        expectedBook.setItemId(1);
+        Book book2 = new Book();
+        book2.setItemId(2);
+
+        when(mockBookRepository.findById(1)).thenReturn(expectedBook);
 
         assertThrows(ItemNotFoundException.class, () -> bookService.findById(3));
+
+        verify(mockBookRepository, times(1)).findById(3);
     }
 
 }

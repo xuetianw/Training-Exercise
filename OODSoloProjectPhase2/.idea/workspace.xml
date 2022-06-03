@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cff83fa3-1c83-4213-a452-c91e7bc8de6c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OODSoloProjectPhase2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/AuthenticationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/AuthenticationServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/OrderingServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OODSoloProject/service/OrderingServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,28 +27,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/xueti/IdeaProjects/Training-Practise/OODSoloProjectPhase2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xueti/IdeaProjects/Training-Practise/OODSoloProjectPhase2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xueti\IdeaProjects\Training-Practise\OODSoloProjectPhase2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in OODSoloProjectPhase2">
-    <configuration name="All in OODSoloProjectPhase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OODSoloProjectPhase2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.OODSoloProject.service in OODSoloProjectPhase2">
     <configuration name="OODSoloProject.service in OODSoloProjectPhase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OODSoloProjectPhase2" />
       <extension name="coverage">
@@ -79,10 +59,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OODSoloProjectPhase2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OODSoloProject.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OODSoloProject.service" />
+      <option name="MAIN_CLASS_NAME" value="OODSoloProject.service.OrderingServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderingServiceTest.getOrdersForBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OODSoloProjectPhase2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OODSoloProject.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OODSoloProject.service" />
+      <option name="MAIN_CLASS_NAME" value="OODSoloProject.service.OrderingServiceTest" />
+      <option name="METHOD_NAME" value="getOrdersForBookTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderingServiceTest.getOrdersForDifferentUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OODSoloProjectPhase2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OODSoloProject.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OODSoloProject.service" />
+      <option name="MAIN_CLASS_NAME" value="OODSoloProject.service.OrderingServiceTest" />
+      <option name="METHOD_NAME" value="getOrdersForDifferentUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderingServiceTest.getOrdersForSameUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OODSoloProjectPhase2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OODSoloProject.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OODSoloProject.service" />
+      <option name="MAIN_CLASS_NAME" value="OODSoloProject.service.OrderingServiceTest" />
+      <option name="METHOD_NAME" value="getOrdersForSameUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in OODSoloProjectPhase2" />
         <item itemvalue="JUnit.OODSoloProject.service in OODSoloProjectPhase2" />
+        <item itemvalue="JUnit.OrderingServiceTest.getOrdersForBookTest" />
+        <item itemvalue="JUnit.OrderingServiceTest.getOrdersForSameUserTest" />
+        <item itemvalue="JUnit.OrderingServiceTest.getOrdersForDifferentUserTest" />
+        <item itemvalue="JUnit.OrderingServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -94,11 +140,65 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654247503994</updated>
-      <workItem from="1654247505385" duration="74000" />
+      <workItem from="1654247505385" duration="764000" />
+      <workItem from="1654264727537" duration="4218000" />
     </task>
+    <task id="LOCAL-00001" summary="change structure remove unnecessary libraries">
+      <created>1654247857607</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654247857607</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change structure remove unnecessary libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="change structure remove unnecessary libraries" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/OODSoloProject/service/AuthenticationService.java</url>
+          <line>15</line>
+          <properties class="OODSoloProject.service.AuthenticationService" method="authenticate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OODSoloProjectPhase2$BookServiceTest.ic" NAME="BookServiceTest Coverage Results" MODIFIED="1654265638856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>OODSoloProject.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OODSoloProjectPhase2$OODSoloProject_service_in_OODSoloProjectPhase2.ic" NAME="OODSoloProject.service in OODSoloProjectPhase2 Coverage Results" MODIFIED="1654267276676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>OODSoloProject.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OODSoloProjectPhase2$AuthenticationServiceTest.ic" NAME="AuthenticationServiceTest Coverage Results" MODIFIED="1654265585502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>OODSoloProject.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OODSoloProjectPhase2$OrderingServiceTest.ic" NAME="OrderingServiceTest Coverage Results" MODIFIED="1654265669946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>OODSoloProject.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OODSoloProjectPhase2$All_in_OODSoloProjectPhase2.ic" NAME="All in OODSoloProjectPhase2 Coverage Results" MODIFIED="1654247639863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
